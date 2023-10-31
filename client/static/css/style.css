@@ -76,7 +76,7 @@ a {
       opacity: 1; }
       .custom-navbar .custom-navbar-nav li a:hover:before {
         width: calc(100% - 16px); }
-    .nav-item .active  {
+   .custom-navbar .custom-navbar-nav li .active  {
     opacity: 1; }
     .custom-navbar .custom-navbar-nav li .active:before  {
       width: calc(100% - 16px); }

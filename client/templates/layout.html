@@ -24,7 +24,7 @@
 		<nav class="custom-navbar navbar navbar navbar-expand-md navbar-dark bg-dark" arial-label="Furni navigation bar">
 
 			<div class="container">
-				<a class="navbar-brand" href="index.html">Furni<span>.</span></a>
+				<a class="navbar-brand" href="{% url 'client:Index' %}">Furni<span>.</span></a>
 
 				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsFurni" aria-controls="navbarsFurni" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
@@ -32,21 +32,23 @@
 
 				<div class="collapse navbar-collapse" id="navbarsFurni">
 					<ul class="custom-navbar-nav navbar-nav ms-auto mb-2 mb-md-0">
-						<li class="nav-item {% if navbar == 'index' %} active {% endif %}">
-							<a class="nav-link" href="{% url 'client:Index' %}">Home</a>
+						<li class="nav-item">
+							<a class="nav-link {% if navbar == 'index' %} active {% endif %}" href="{% url 'client:Index' %}">Home</a>
 						</li>
-						<li class="{% if navbar == 'shop' %} active {% endif %}"><a class="nav-link {% if navbar == 'shop' %} active {% endif %}" href="{% url 'client:Shop' %}">Shop</a></li>
-						<li class="{% if navbar == 'about' %} active {% endif %}">
-                            <a class="nav-link" href="{% url 'client:About' %}">About us</a>
+						<li>
+                            <a class="nav-link {% if navbar == 'shop' %} active {% endif %}" href="{% url 'client:Shop' %}">Shop</a>
                         </li>
-						<li class="{% if navbar == 'services' %} active {% endif %}">
-                            <a class="nav-link" href="{% url 'client:Services' %}">Services</a>
+						<li>
+                            <a class="nav-link {% if navbar == 'about' %} active {% endif %}" href="{% url 'client:About' %}">About us</a>
                         </li>
-						<li class="{% if navbar == 'blog' %} active {% endif %}">
-                            <a class="nav-link" href="{% url 'client:Blog' %}">Blog</a>
+						<li>
+                            <a class="nav-link {% if navbar == 'services' %} active {% endif %}" href="{% url 'client:Services' %}">Services</a>
                         </li>
-						<li class="{% if navbar == 'contact' %} active {% endif %}">
-                            <a class="nav-link " href="{% url 'client:Contact' %}">Contact us</a>
+						<li>
+                            <a class="nav-link {% if navbar == 'blog' %} active {% endif %}" href="{% url 'client:Blog' %}">Blog</a>
+                        </li>
+						<li>
+                            <a class="nav-link {% if navbar == 'contact' %} active {% endif %}" href="{% url 'client:Contact' %}">Contact us</a>
                         </li>
 					</ul>
 
