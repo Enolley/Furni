@@ -68,6 +68,8 @@
 								{% block hero %}
 
                                 {% endblock %}
+                                <p class="mb-4">Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate velit imperdiet dolor tempor tristique.</p>
+                                <p><a href="{% url 'client:Shop' %}" class="btn btn-secondary me-2">Shop Now</a><a href="{% url 'client:Shop' %}" class="btn btn-white-outline">Explore</a></p>
 							</div>
 						</div>
 						<div class="col-lg-7">
@@ -135,10 +137,10 @@
 						<div class="row links-wrap">
 							<div class="col-6 col-sm-6 col-md-3">
 								<ul class="list-unstyled">
-									<li><a href="#">About us</a></li>
-									<li><a href="#">Services</a></li>
-									<li><a href="#">Blog</a></li>
-									<li><a href="#">Contact us</a></li>
+									<li><a href="{% url 'client:About' %}">About us</a></li>
+									<li><a href="{% url 'client:Services' %}">Services</a></li>
+									<li><a href="{% url 'client:Blog' %}">Blog</a></li>
+									<li><a href="{% url 'client:Contact' %}">Contact us</a></li>
 								</ul>
 							</div>
 

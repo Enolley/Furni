@@ -24,8 +24,14 @@ def blog(request):
 def contact(request):
     return render(request, 'contact.html', {'navbar': 'contact'})
 
+
 def cart(request):
-    return render(request, 'cart.html', {'navbar' : 'cart'})
+    return render(request, 'cart.html', {'navbar': 'cart'})
+
 
 def checkout(request):
-    return render(request, 'checkout.html', {'navbar' : 'checkout'})
+    return render(request, 'checkout.html', {'navbar': 'checkout'})
+
+
+def thankyou(request):
+    return render(request, 'thankyou.html')

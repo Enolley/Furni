@@ -2,8 +2,6 @@
 {% load static %}
 {% block hero %}
     <h1>Blog</h1>
-    <p class="mb-4">Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate velit imperdiet dolor tempor tristique.</p>
-    <p><a href="" class="btn btn-secondary me-2">Shop Now</a><a href="#" class="btn btn-white-outline">Explore</a></p>
 {% endblock %}
 {% block image %}
     <img src="{% static 'images/couch.png' %}" class="img-fluid">
@@ -20,7 +18,7 @@
 
 					<div class="col-12 col-sm-6 col-md-4 mb-5">
 						<div class="post-entry">
-							<a href="#" class="post-thumbnail"><img src="images/post-1.jpg" alt="Image" class="img-fluid"></a>
+							<a href="#" class="post-thumbnail"><img src="{% static 'images/post-1.jpg' %}" alt="Image" class="img-fluid"></a>
 							<div class="post-content-entry">
 								<h3><a href="#">First Time Home Owner Ideas</a></h3>
 								<div class="meta">
@@ -32,7 +30,7 @@
 
 					<div class="col-12 col-sm-6 col-md-4 mb-5">
 						<div class="post-entry">
-							<a href="#" class="post-thumbnail"><img src="images/post-2.jpg" alt="Image" class="img-fluid"></a>
+							<a href="#" class="post-thumbnail"><img src="{% static 'images/post-2.jpg' %}" alt="Image" class="img-fluid"></a>
 							<div class="post-content-entry">
 								<h3><a href="#">How To Keep Your Furniture Clean</a></h3>
 								<div class="meta">
@@ -44,7 +42,7 @@
 
 					<div class="col-12 col-sm-6 col-md-4 mb-5">
 						<div class="post-entry">
-							<a href="#" class="post-thumbnail"><img src="images/post-3.jpg" alt="Image" class="img-fluid"></a>
+							<a href="#" class="post-thumbnail"><img src="{% static 'images/post-3.jpg' %}" alt="Image" class="img-fluid"></a>
 							<div class="post-content-entry">
 								<h3><a href="#">Small Space Furniture Apartment Ideas</a></h3>
 								<div class="meta">
@@ -56,7 +54,7 @@
 
 					<div class="col-12 col-sm-6 col-md-4 mb-5">
 						<div class="post-entry">
-							<a href="#" class="post-thumbnail"><img src="images/post-1.jpg" alt="Image" class="img-fluid"></a>
+							<a href="#" class="post-thumbnail"><img src="{% static 'images/post-1.jpg' %}" alt="Image" class="img-fluid"></a>
 							<div class="post-content-entry">
 								<h3><a href="#">First Time Home Owner Ideas</a></h3>
 								<div class="meta">
@@ -68,7 +66,7 @@
 
 					<div class="col-12 col-sm-6 col-md-4 mb-5">
 						<div class="post-entry">
-							<a href="#" class="post-thumbnail"><img src="images/post-2.jpg" alt="Image" class="img-fluid"></a>
+							<a href="#" class="post-thumbnail"><img src="{% static 'images/post-2.jpg' %}" alt="Image" class="img-fluid"></a>
 							<div class="post-content-entry">
 								<h3><a href="#">How To Keep Your Furniture Clean</a></h3>
 								<div class="meta">
@@ -80,7 +78,7 @@
 
 					<div class="col-12 col-sm-6 col-md-4 mb-5">
 						<div class="post-entry">
-							<a href="#" class="post-thumbnail"><img src="images/post-3.jpg" alt="Image" class="img-fluid"></a>
+							<a href="#" class="post-thumbnail"><img src="{% static 'images/post-3.jpg' %}" alt="Image" class="img-fluid"></a>
 							<div class="post-content-entry">
 								<h3><a href="#">Small Space Furniture Apartment Ideas</a></h3>
 								<div class="meta">
@@ -92,7 +90,7 @@
 
 					<div class="col-12 col-sm-6 col-md-4 mb-5">
 						<div class="post-entry">
-							<a href="#" class="post-thumbnail"><img src="images/post-1.jpg" alt="Image" class="img-fluid"></a>
+							<a href="#" class="post-thumbnail"><img src="{% static 'images/post-1.jpg' %}" alt="Image" class="img-fluid"></a>
 							<div class="post-content-entry">
 								<h3><a href="#">First Time Home Owner Ideas</a></h3>
 								<div class="meta">
@@ -104,7 +102,7 @@
 
 					<div class="col-12 col-sm-6 col-md-4 mb-5">
 						<div class="post-entry">
-							<a href="#" class="post-thumbnail"><img src="images/post-2.jpg" alt="Image" class="img-fluid"></a>
+							<a href="#" class="post-thumbnail"><img src="{% static 'images/post-2.jpg' %}" alt="Image" class="img-fluid"></a>
 							<div class="post-content-entry">
 								<h3><a href="#">How To Keep Your Furniture Clean</a></h3>
 								<div class="meta">
@@ -116,7 +114,7 @@
 
 					<div class="col-12 col-sm-6 col-md-4 mb-5">
 						<div class="post-entry">
-							<a href="#" class="post-thumbnail"><img src="images/post-3.jpg" alt="Image" class="img-fluid"></a>
+							<a href="#" class="post-thumbnail"><img src="{% static 'images/post-3.jpg' %}" alt="Image" class="img-fluid"></a>
 							<div class="post-content-entry">
 								<h3><a href="#">Small Space Furniture Apartment Ideas</a></h3>
 								<div class="meta">
@@ -164,7 +162,7 @@
 
 												<div class="author-info">
 													<div class="author-pic">
-														<img src="images/person-1.png" alt="Maria Jones" class="img-fluid">
+														<img src="{% static 'images/person-1.png' %}" alt="Maria Jones" class="img-fluid">
 													</div>
 													<h3 class="font-weight-bold">Maria Jones</h3>
 													<span class="position d-block mb-3">CEO, Co-Founder, XYZ Inc.</span>
@@ -187,7 +185,7 @@
 
 												<div class="author-info">
 													<div class="author-pic">
-														<img src="images/person-1.png" alt="Maria Jones" class="img-fluid">
+														<img src="{% static 'images/person-1.png' %}" alt="Maria Jones" class="img-fluid">
 													</div>
 													<h3 class="font-weight-bold">Maria Jones</h3>
 													<span class="position d-block mb-3">CEO, Co-Founder, XYZ Inc.</span>
@@ -210,7 +208,7 @@
 
 												<div class="author-info">
 													<div class="author-pic">
-														<img src="images/person-1.png" alt="Maria Jones" class="img-fluid">
+														<img src="{% static 'images/person-1.png' %}" alt="Maria Jones" class="img-fluid">
 													</div>
 													<h3 class="font-weight-bold">Maria Jones</h3>
 													<span class="position d-block mb-3">CEO, Co-Founder, XYZ Inc.</span>
