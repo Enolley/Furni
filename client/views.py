@@ -1,24 +1,42 @@
 from django.shortcuts import render
-
+from .models import Product, Testimonial, Blog
+from django.core.paginator import Paginator
 
 def index(request):
-    return render(request, 'index.html', {'navbar': 'index'})
+    testimonial = Testimonial.objects.all()
+    paginate_blog = Paginator(Blog.objects.all().order_by('name'), 3)
+    page = request.GET.get('page')
+    blogs = paginate_blog.get_page(page)
+
+    paginate_product = Paginator(Product.objects.all().order_by('name'), 3)
+    page_product = request.GET.get('page')
+    product = paginate_product.get_page(page_product)
+    return render(request, 'index.html', {'navbar': 'index', 'testimonial': testimonial, 'blogs':blogs, 'product': product})
 
 
 def shop(request):
-    return render(request, 'shop.html', {'navbar': 'shop'})
+    product = Product.objects.all()
+    return render(request, 'shop.html', {'navbar': 'shop', 'product': product})
 
 
 def about(request):
-    return render(request, 'about.html', {'navbar': 'about'})
+    testimonial = Testimonial.objects.all()
+    return render(request, 'about.html', {'navbar': 'about', 'testimonial': testimonial})
 
 
 def services(request):
-    return render(request, 'services.html', {'navbar': 'services'})
+    testimonial = Testimonial.objects.all()
+
+    paginate_product = Paginator(Product.objects.all().order_by('name'), 3)
+    page_product = request.GET.get('page')
+    product = paginate_product.get_page(page_product)
+    return render(request, 'services.html', {'navbar': 'services', 'testimonial': testimonial, 'product': product})
 
 
 def blog(request):
-    return render(request, 'blog.html', {'navbar': 'blog'})
+    testimonial = Testimonial.objects.all()
+    blogs = Blog.objects.all()
+    return render(request, 'blog.html', {'navbar': 'blog', 'testimonial': testimonial, 'blogs': blogs})
 
 
 def contact(request):
