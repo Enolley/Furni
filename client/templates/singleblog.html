@@ -1,0 +1,22 @@
+{% extends 'layout.html' %}
+{% load static %}
+{% block hero %}
+    <h1>{{ singleblogpost.title }}</h1>
+{% endblock %}
+{% block section %}
+    <title>{{ singleblogpost.title }}</title>
+
+    <div class="container">
+        <br>
+        <h2>{{ singleblogpost.title }}</h2>
+        <h4>{{ singleblogpost.name }}</h4>
+        <h5>{{ singleblogpost.created_at }}</h5>
+        <br>
+        <hr>
+        <br>
+        <p>{{ singleblogpost.content }}</p>
+        <br>
+        <hr>
+        <br>
+    </div>
+{% endblock %}

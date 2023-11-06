@@ -53,3 +53,11 @@ def checkout(request):
 
 def thankyou(request):
     return render(request, 'thankyou.html')
+
+def singleblog(request, id):
+    singleblogpost = Blog.objects.get(id=id)
+    return render(request, 'singleblog.html', {'singleblogpost': singleblogpost})
+
+def singleproduct(request, id):
+    singleproductpost = Product.objects.get(id=id)
+    return render(request, 'singleproduct.html', {'singleproductpost': singleproductpost})

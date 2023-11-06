@@ -11,6 +11,8 @@ urlpatterns = [
     path('contact', views.contact, name="Contact"),
     path('cart', views.cart, name="Cart"),
     path('checkout', views.checkout, name="Checkout"),
-    path('thankyou', views.thankyou, name="Thankyou")
+    path('thankyou', views.thankyou, name="Thankyou"),
+    path('singleblog/<id>', views.singleblog, name="Singleblog"),
+    path('singleproduct/<id>', views.singleproduct, name="Singleproduct")
 
 ]

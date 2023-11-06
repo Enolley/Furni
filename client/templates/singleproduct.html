@@ -1,0 +1,23 @@
+{% extends 'layout.html' %}
+{% load static %}
+{% block hero %}
+    <h1>{{ singleproductpost.name }}</h1>
+{% endblock %}
+{% block section %}
+    <title>{{ singleproductpost.name }}</title>
+
+    <div class="container">
+        <br>
+        <h2>{{ singleproductpost.name }}</h2>
+        <h3>Ksh. {{ singleproductpost.price }}</h3>
+        <br>
+        <hr>
+        <br>
+        <p>{{ singleproductpost.description }}</p>
+        <br>
+        <img src="/media/{{ singleproductpost.image }}" alt="">
+        <br>
+        <hr>
+        <br>
+    </div>
+{% endblock %}
